@@ -4,27 +4,29 @@ import math
 #Implement Factorial
 
 #Sequential Implementation
-# def factorial_sequential(n):
-#     if n < 0:
-#         return "You have Entered a negative number"
-#     result = 1
-#     for i in range(1, n + 1):
-#         result *= i
-#     return result
-#
-# print(factorial_sequential(5))
-#
-# #Recursiev Implementation
-# def factorial_recursive(n):
-#     if n < 0:
-#         return "You have Entered a negative number"
-#     if n == 0 or n == 1:
-#         return 1
-#     else:
-#         return n * factorial_recursive(n - 1)
-#
-#
-# print(factorial_recursive(5))
+def factorial_sequential(n):
+    if n < 0:
+        return "You have Entered a negative number"
+    result = 1
+    for i in range(1, n + 1):
+        result *= i
+    return result
+
+
+print(factorial_sequential(5))
+
+
+#Recursiev Implementation
+def factorial_recursive(n):
+    if n < 0:
+        return "You have Entered a negative number"
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * factorial_recursive(n - 1)
+
+
+print(factorial_recursive(5))
 
 # - Implement *** prints
 #       -- Upper Triangle & its reverse
